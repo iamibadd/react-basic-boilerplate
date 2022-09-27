@@ -1,0 +1,1 @@
+export const SET_FUNDS = 'SET_FUNDS';
