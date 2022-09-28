@@ -2,8 +2,8 @@ import React, {lazy, Suspense} from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
 import {APP_PREFIX_PATH, AUTH_PREFIX_PATH} from "../../config/app-config";
 
-const Dashboard = lazy(() => import( '../../components/app/dashboard'));
-const PageNotFound = lazy(() => import( '../../components/utils/page-404'));
+const Dashboard = lazy(() => import( '../../views/app/dashboard'));
+const PageNotFound = lazy(() => import( '../../components/util-components/page-404'));
 
 const routes = [
     {

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
 import {useNavigate} from 'react-router-dom';
-import {login} from '../../redux/actions';
+import {login} from '../../../redux/actions';
 
-const Login = () => {
+const Index = () => {
     const [user, setUser] = useState({});
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -31,4 +31,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Index;
