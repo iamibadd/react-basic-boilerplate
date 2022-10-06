@@ -19,7 +19,7 @@ api.interceptors.response.use((response) => {
     return response.data;
 }, (error) => {
     // Handle response error here
-    return Promise.reject(error?.response?.data?.message || error?.response?.data);
+    return Promise.reject({message: error?.response?.data?.message || error?.response?.data});
 });
 
 export default api;
