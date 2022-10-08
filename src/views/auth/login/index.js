@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
 import {useNavigate} from 'react-router-dom';
 import {login} from '../../../redux/actions';
+import styles from './styles.module.css';
 
 const Login = () => {
     const [user, setUser] = useState({});
@@ -21,7 +22,7 @@ const Login = () => {
     }
     return (
         <div>
-            <h6>Login here</h6>
+            <h1 className={styles.title}>Login here</h1>
             <form onSubmit={onLogin}>
                 <input required={true} type="text" name='email' placeholder='email' onChange={onChange}/><br/>
                 <input required={true} type="password" name='password' placeholder='password' onChange={onChange}/><br/>
